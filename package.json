@@ -1,0 +1,16 @@
+{
+  "name": "apiv2token",
+  "version": "1.0.0",
+  "description": "A demo to show how to automate getting management api token",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv-safe": "^4.0.3",
+    "memory-cache": "^0.1.6",
+    "request": "^2.79.0"
+  }
+}
