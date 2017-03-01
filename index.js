@@ -2,9 +2,6 @@ var request = require("request");
 require('dotenv-safe').load();
 var cache = require('memory-cache');
 
-console.log(process.env.CLIENT_ID);
-console.log(process.env.CLIENT_SECRET);
-
 var options = { method: 'POST',
   url: 'https://kachhalimbu.auth0.com/oauth/token',
   headers: { 'content-type': 'application/json' },
@@ -35,9 +32,8 @@ function getManagementToken(cb) {
   }
 }
 
-// setInterval(function() {
-//   console.log('Hiiii');
-// }, 10000);
+// TODO: Clean up this and add a proper test.
+
 getManagementToken(function() {
   console.log('Got first token');
 });
